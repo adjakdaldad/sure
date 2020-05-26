@@ -1,0 +1,146 @@
+{
+  "editor.fontSize": 12,
+  "editor.fontFamily": "'Fira Code', '微软雅黑', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "breadcrumbs.enabled": true,
+  "window.zoomLevel": 0,
+  "window.menuBarVisibility": "hidden",
+  "editor.tabSize": 2,
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "files.trimTrailingWhitespace": true,
+  "editor.tabCompletion": "onlySnippets",
+  "javascript.suggest.completeFunctionCalls": false,
+  "typescript.suggest.completeFunctionCalls": false,
+  "editor.lineHeight": 18,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.dragAndDrop": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.js.map": true,
+    "**/bundle.js": true,
+    "**/__pycache__": true
+  },
+  "tslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "python.workspaceSymbols.ctagsPath": "/usr/bin/ctags",
+  "sync.gist": "",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.forceDownload": false,
+  "editor.renderIndentGuides": true,
+  "html.format.unformatted": "code, pre, textarea",
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapLineLength": 0,
+  "html.format.wrapAttributes": "preserve",
+  "html.format.indentHandlebars": true,
+  "emmet.showSuggestionsAsSnippets": false,
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.excludeLanguages": [
+    "less",
+    "css"
+  ],
+  "editor.snippetSuggestions": "inline",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "[csharp]": {
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "beautify.tabSize": 2,
+  "beautify.options": {
+    "indent_size": 2,
+    "preserve_newlines": true,
+    "newline_between_rules": true,
+    "selector_separator_newline": false
+  },
+  "sync.quietSync": false,
+  "window.enableMenuBarMnemonics": false,
+  "sync.askGistName": false,
+  "editor.codeLens": false,
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "#fdfdfd",
+      "backgroundColor": "#b9177d"
+    },
+    {
+      "text": "DEBUG:",
+      "color": "#fdfdfd",
+      "backgroundColor": "#1568ab"
+    },
+    {
+      "text": "NOTE:",
+      "color": "orange",
+      "backgroundColor": "transparent"
+    },
+    {
+      "text": "HACK:",
+      "color": "white",
+      "backgroundColor": "#666",
+      "isWholeLine": false
+    }
+  ],
+  "workbench.colorTheme": "One Dark+ (Sublime)",
+  "python.pythonPath": "python3",
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "javascript.referencesCodeLens.enabled": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.keymap": "alternate",
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "git.confirmSync": false,
+  "python.sortImports.args": [
+    // see https://github.com/timothycrosley/isort#configuring-isort
+    "-w 120", //line length
+    "-m 2" //multi line style
+  ],
+  "files.associations": {
+    "*.wpy": "vue"
+  },
+  // new settings in version 1.29
+  "search.usePCRE2": true,
+  "search.showLineNumbers": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.centeredLayoutAutoResize": true,
+  "gitlens.views.repositories.files.layout": "list",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "files.eol": "\n",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+}

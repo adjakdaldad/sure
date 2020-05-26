@@ -1,0 +1,982 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    // ====================
+    // overwrite editor command shortcut
+    // ====================
+    {
+        "key": "ctrl+c l",
+        "command": "workbench.action.gotoLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+\\",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+x ctrl+r",
+        "command": "workbench.action.reloadWindow"
+    },
+    {
+        "key": "ctrl+x ctrl+k",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+x k",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+x 0",
+        "command": "workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "ctrl+x 3",
+        "command": "workbench.action.splitEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x 2",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "editor.action.goToTypeDefinition",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f10",
+        "command": "editor.action.previewDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+f10",
+        "command": "editor.action.peekTypeDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+alt+enter",
+        "command": "workbench.action.keepEditor"
+    },
+    {
+        "key": "shift+f11",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "alt+l",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "f8",
+        "command": "-editor.action.marker.nextInFiles",
+        "when": "editorFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+f8",
+        "command": "-editor.action.marker.prevInFiles",
+        "when": "editorFocus && !editorReadonly"
+    },
+    {
+        "key": "f8",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+f8",
+        "command": "editor.action.marker.prev",
+        "when": "editorFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+y",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+    // ====================
+    // edit shortcuts
+    // ====================
+    {
+        "key": "alt+backspace",
+        "command": "deleteWordLeft",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+backspace",
+        "command": "deleteWordLeft",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.findInFiles",
+        "when": "!searchInputBoxFocus"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.findInFiles",
+        "when": "!searchInputBoxFocus"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "undo",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "redo",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+m",
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x ctrl+x",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+l",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": "alt+shift+l",
+        "command": "beautify.format",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "beautify.format",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "editor.action.organizeImports",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+;",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "deleteWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "deleteWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+o",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorTextFocus"
+    },
+    // ====================
+    // cursor movements
+    // ====================
+    {
+        "key": "alt+/",
+        "command": "cursorBottom",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+\\",
+        "command": "cursorTop",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+,",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "alt+n",
+        "command": "workbench.action.navigateEditorGroups"
+    },
+    {
+        "key": "ctrl+alt+shift+j",
+        "command": "workbench.action.moveEditorLeftInGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+shift+k",
+        "command": "workbench.action.moveEditorRightInGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+shift+n",
+        "command": "workbench.action.moveEditorToNextGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+shift+p",
+        "command": "workbench.action.moveEditorToPreviousGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x o",
+        "command": "workbench.action.navigateEditorGroups",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "emacs.cursorHome",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "emacs.cursorWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "emacs.cursorWordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "emacs.cursorWordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "emacs.cursorWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "emacs.cursorWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "acceptSelectedSuggestionOnEnter",
+        "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "acceptRenameInput",
+        "when": "editorFocus && renameInputVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "list.focusUp",
+        "when": "listFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "list.focusDown",
+        "when": "listFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "list.collapse",
+        "when": "listFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "list.expand",
+        "when": "listFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "list.expand",
+        "when": "listFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "list.select",
+        "when": "listFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.acceptSelectedQuickOpenItem",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+alt+a",
+        "command": "emacs.cursorHome",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "editor.action.inPlaceReplace.down",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "editor.action.inPlaceReplace.up",
+        "when": "editorTextFocus"
+    },
+    // ====================
+    // prevent stupid default behavious
+    // ====================
+    {
+        "key": "alt+shift+,",
+        "command": ""
+    },
+    {
+        "key": "alt+q",
+        "command": ""
+    },
+    {
+        "key": "shift+alt+0",
+        "command": ""
+    },
+    // ====================
+    // intelisense suggest and function paramater hints
+    // ====================
+    {
+        "key": "alt+shift+/", //alt + ?
+        "command": "editor.action.quickFix"
+    },
+    {
+        "key": "alt+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+space",
+        "command": "toggleSuggestionDetails",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "alt-shift-space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "toggleSuggestionDetails",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "alt-shift-enter",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorTextFocus"
+    },
+    // ====================
+    // Explorer viewlet commands
+    // ====================
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.view.explorer",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.view.explorer",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "openEditorsFocus"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "list.select",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "list.collapse",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "list.expand",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "alt+a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "alt+shift+a",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "alt+d", // d stand for delete
+        "command": "moveFileToTrash",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "moveFileToTrash",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "alt+r", // r stand for reveal
+        "command": "revealFileInOS",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "alt+c", // c stand for collaps
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && !renameInputVisible"
+    },
+    {
+        "key": "ctrl-v",
+        "command": "filesExplorer.paste",
+        "when": "filesExplorerFocus && !renameInputVisible"
+    },
+    // ====================
+    // Search viewlet commands
+    // ====================
+    {
+        "key": "ctrl+g",
+        "command": "workbench.view.search",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.findInFiles",
+        "when": "!searchInputBoxFocus"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.replaceInFiles",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "tab",
+        "command": "search.focus.nextInputBox",
+        "when": "!searchInputBoxFocus && searchViewletVisible && !editorFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.findInFiles",
+        "when": "!searchInputBoxFocus && searchViewletVisible && !editorFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "search.action.replaceAll",
+        "when": "!searchInputBoxFocus && searchViewletVisible && !editorFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "search.focus.nextInputBox",
+        "when": "inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "search.focus.previousInputBox",
+        "when": "inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.replaceInFiles",
+        "when": "matchFocus && replaceActive && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+1",
+        "command": "-search.action.replace",
+        "when": "matchFocus && replaceActive && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "search.action.replace",
+        "when": "matchFocus && replaceActive && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-search.action.replaceAllInFile",
+        "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "search.action.replaceAllInFile",
+        "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+    },
+    // ====================
+    // Find widget commands
+    // ====================
+    {
+        "command": "closeFindWidget",
+        "key": "ctrl+g",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-actions.find",
+        "when": "!findWidgetVisible"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "actions.find",
+        "when": "!findWidgetVisible && editorFocus"
+    },
+    // ====================
+    // Commander commands
+    // ====================
+    {
+        "key": "ctrl+w",
+        "command": "commander.runCommands",
+        "args": [
+            "editor.action.clipboardCutAction",
+            "commander.wait",
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "commander.runCommands",
+        "args": [
+            "editor.action.clipboardCopyAction",
+            "cancelSelection",
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "commander.runCommands",
+        "args": [
+            "editor.action.insertLineBefore",
+            "cursorHome",
+            "cursorHome"
+        ],
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "commander.runCommands",
+        "args": [
+            "emacs.cursorUp",
+            "emacs.cursorUp",
+            "emacs.cursorUp",
+            "emacs.cursorUp",
+            "emacs.cursorUp"
+        ],
+        "when": "editorTextFocus && !suggestWidgetVisibles"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "commander.runCommands",
+        "args": [
+            "emacs.cursorDown",
+            "emacs.cursorDown",
+            "emacs.cursorDown",
+            "emacs.cursorDown",
+            "emacs.cursorDown"
+        ],
+        "when": "editorTextFocus && !suggestWidgetVisibles"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "commander.runCommands",
+        "args": [
+            "emacs.cursorUp",
+            "emacs.cursorUp",
+            "emacs.cursorUp",
+            "emacs.cursorUp",
+            "emacs.cursorUp"
+        ],
+        "when": "editorTextFocus && !suggestWidgetVisibles"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "commander.runCommands",
+        "args": [
+            "emacs.cursorDown",
+            "emacs.cursorDown",
+            "emacs.cursorDown",
+            "emacs.cursorDown",
+            "emacs.cursorDown"
+        ],
+        "when": "editorTextFocus && !suggestWidgetVisibles"
+    },
+    {
+        "key": "alt+shift+.", //ctrl+>
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "->"
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+shift+.", //ctrl+alt+>
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "=>"
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+shift+9", //alt+(
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "()",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+shift+'", //alt+"
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "\"\"",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+'", //alt+'
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "''",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+shift+,", //alt+<
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "<>",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+[", //alt+[
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "[]",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+shift+[", //alt+{
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "{}",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+[", //ctrl+[
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "[]",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+[", //ctrl+{
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "{}",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+shift+8", //alt+*
+        "command": "commander.runCommands",
+        "args": [
+            [
+                "fastsnippet.insertText",
+                "**",
+                -1
+            ],
+            "emacs.exitMarkMode"
+        ],
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "commander.runCommands",
+        "args": [
+            "lineBreakInsert",
+            "cursorDown"
+        ],
+        "when": "editorTextFocus && !suggestWidgetVisible && !renameInputVisible"
+    },
+    // {
+    //     "key": "ctrl+shift+l",
+    //     "command": "commander.runCommands",
+    //     "args": [
+    //         "beautify.format",
+    //         "editor.action.organizeImports"
+    //     ],
+    //     "when": "editorFocus && !editorHasSelection && !editorReadonly"
+    // },
+    {
+        "key": "ctrl+shift+l",
+        "command": "commander.runCommands",
+        "args": [
+            "python.sortImports",
+            "beautify.format",
+        ],
+        "when": "editorFocus && !editorHasSelection && !editorReadonly && editorLangId == 'python'"
+    },
+    // {
+    //     "key": "alt+shift+l",
+    //     "command": "commander.runCommands",
+    //     "args": [
+    //         "beautify.format",
+    //         "editor.action.organizeImports"
+    //     ],
+    //     "when": "editorFocus && !editorHasSelection && !editorReadonly"
+    // },
+    {
+        "key": "alt+shift+l",
+        "command": "commander.runCommands",
+        "args": [
+            "python.sortImports",
+            "beautify.format",
+        ],
+        "when": "editorFocus && !editorHasSelection && !editorReadonly && editorLangId == 'python'"
+    },
+    // ====================
+    // emacs-candies commands
+    // ====================
+    {
+        "key": "ctrl+a",
+        "command": "emacsCandies.cursorHome",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "emacsCandies.killToEndOfLine",
+        "when": "editorTextFocus"
+    },
+    // ====================
+    // advanced new file commands
+    // ====================
+    {
+        "key": "ctrl+alt+n",
+        "command": "-extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+x n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+x ctrl+n",
+        "command": "extension.advancedNewFile"
+    },
+    // ====================
+    // debug commands
+    // ====================
+    {
+        "key": "ctrl+alt+1",
+        "command": "emacsMarkMode.cursorHome"
+    },
+    // ====================
+    // remove default keybindings
+    // ====================
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.view.search",
+        "when": "!searchViewletFocus"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+l l",
+        "command": "-o.showOutput"
+    },
+    {
+        "key": "shift+f8",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "editorFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+f8",
+        "command": "-editor.action.marker.prevInFiles",
+        "when": "editorFocus && !editorReadonly"
+    },
+    // for windows keyboard mapping
+    {
+        "key": "alt+f10", //remapped to alt+space using autoHotKey
+        "command": "editor.action.triggerSuggest",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f10", //remapped to alt+space using autoHotKey
+        "command": "toggleSuggestionDetails",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "alt-shift-f10",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorTextFocus"
+    }
+]

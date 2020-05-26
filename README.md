@@ -1,0 +1,2 @@
+# sure
+vscode sncy setting
